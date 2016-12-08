@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="chattiez" ng-init="likes=0;register=true;login=true;blog=false;viewAllBlogs=false;job=false;adminBlogs=false;logout=false;ename='data'">
+
+<head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+
+
+  <!-- SPELLS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/home.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Chattiezz</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="#register"ng-show="register"><i class="fa fa-home"></i> Register</a></li> 
+        <li><a href="#login" ng-show="login"><i class="fa fa-shield"></i> Login</a></li>
+        <li><a href="#blog" ng-show="blog"><i class="fa fa-shield"></i> My Blogs</a></li>
+        <li><a href="#viewAllBlogs" ng-show=viewAllBlogs"><i class="fa fa-shield"></i> View all blogs</a></li>
+        <li><a href="#jobs" ng-show="job"><i class="fa fa-shield"></i> Job alert</a></li>
+        <li><a href="#logout" ng-show="logout"><i class="fa fa-shield"></i> Log out</a></li>
+         <li><a href="#adminBlogs" ng-show="adminBlogs"><i class="fa fa-shield"></i> Admin blogs</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div ng-view></div>
+</body>
+</html>
